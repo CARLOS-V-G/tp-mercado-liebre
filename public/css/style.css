@@ -1,0 +1,149 @@
+:root{
+    --Amarillo: #eac926;
+    --Azul: #03264c;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: rgb(100, 100, 100);
+}
+
+
+.home__header{
+    background-color: var(--Amarillo);
+    padding: 18px;
+    margin: auto;
+    position: relative;
+}
+
+.home__header--logo{
+    width: 50%;
+}
+
+
+.home__banner{
+    width: 100%;
+}
+
+.home__header--search-bar input{
+    width: 80%;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search__button{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.home__compra-en{
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding: 20px;
+}
+
+.home__burger--menu{
+    color: white;
+    text-align: center;
+}
+
+.fa-bars{
+    background-color: var(--Celeste);
+    padding: 12px;
+    border-radius: 15%;
+    font-size: 25px;
+}
+
+
+
+ .home__navbar ul{
+    list-style: none;
+    margin: 12;
+    padding:0;
+}
+
+.home__navbar a{
+    color: var(--Gris-oscuro);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.home__login-bar i{
+    padding: 2px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+
+
+.precio{
+    
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.produc img{
+    width: 100%;
+}
+
+
+
+.freet{
+    border: 1px solid var(--Gris-claro); 
+    width: 90vw;
+    margin: 4px;
+}
+
+
+
+ footer{
+    background-color: #fff;
+    margin: 4px;
+    font-size: 17px;
+    text-align: center;
+} 
+
+
+.description{
+    font-size: 16px;
+}
+
+.Copyright{
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.fa-credit-card{
+    color: #1259c3;
+    margin-bottom: 3px;
+}
+
+.fa-gift{
+    color: #1259c3;
+    margin-bottom: 4px;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    margin-bottom: 4px;
+}
