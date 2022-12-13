@@ -7,6 +7,12 @@
     --Verde: #39b54a;
 } 
 
+/* El tipografía lo importe aca porque en el trabajo practico solo un archivo de css y :root no me lo tomaba desde un archivo variable*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -93,7 +99,6 @@ body {
 }
 
 
-
 .precio{
     
     font-size: 18px;
@@ -114,8 +119,7 @@ body {
 }
 
 
-
- footer{
+footer{
     background-color: #fff;
     margin: 4px;
     font-size: 17px;
