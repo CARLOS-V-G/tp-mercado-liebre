@@ -1,28 +1,24 @@
 :root{
-    --Amarillo: #eac926;
-    --Azul: #03264c;
-    --Celeste: #1259c3;
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259C3;
     --Gris-oscuro: #666;
-    --Gris-claro: #ebebeb;
-    --Verde: #39b54a;
-} 
-
-/* El tipografía lo importe aca porque en el trabajo practico solo un archivo de css y :root no me lo tomaba desde un archivo variable*/
+    --Gris-claro: #EBEBEB;
+    --Verde: #39B54A;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-
-* {
+*{
     box-sizing: border-box;
+    /* padding: 0px; */
 }
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    background-color: rgb(100, 100, 100);
+    font-size: 14px;
+    background-color: var(--Gris-claro);
 }
-
 
 .home__header{
     background-color: var(--Amarillo);
@@ -31,39 +27,44 @@ body {
     position: relative;
 }
 
-.home__header--logo{
-    width: 50%;
+.logo{
+    width: 31%;
+    padding: 5px;
 }
 
-
-.home__banner{
-    width: 100%;
+.home__header--topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.home__header--search-bar input{
-    width: 80%;
-    background-color: #fff;
+.search-bar input{
+    width: 81%;
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
 }
 
-.search__button{
-    background-color: #fff;
+.lupa{
+    width: 17%;
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
 }
 
-.home__compra-en{
-    font-weight: 400;
+.home__compra--en{
+    font-size: 400;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     margin: auto;
     padding: 20px;
 }
 
-.home__burger--menu{
+.header__buerger--menu{
     color: white;
     text-align: center;
 }
@@ -75,79 +76,327 @@ body {
     font-size: 25px;
 }
 
-
-
- .home__navbar ul{
-    list-style: none;
-    margin: 12;
-    padding:0;
+.navbar {
+    display: none;
 }
 
-.home__navbar a{
+.navbar, ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar, a{
     color: var(--Gris-oscuro);
-    display: inline-block;
+    /* display: inline-block; */
     padding: 5px 0;
     font-size: 17px;
 }
 
-.home__login-bar i{
-    padding: 2px;
+.navbar {
+    display: none;
 }
 
-.descuentos{
-    font-size: 16px;
+.banner img{
+    width: 100%;
 }
 
+.text{
+    color: var(--Gris-oscuro);
+    text-align: center;
+    font-size: 28px;
+}
 
-.precio{
-    
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+main{
+    background-color: var(--Gris-claro);
+    width: 90%;
+    margin: auto;
+}
 
+h3{
+    text-align: center;
+}
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produc{
+    margin-bottom: 10px;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    background-color: white;
+    margin-top: 12px;
 }
 
 .produc img{
     width: 100%;
 }
 
+.inf--produc{
+    border-top: 1px solid var(--Gris-claro);
+    padding: 15px;
+}
 
+ .preciodescuento{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.precio{
+    font-size: 18px;
+    /* width: 30%; */
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b34a;
+    width: auto;
+    padding: 3px;
+}
+
+
+.descripcion:hover{
+    opacity: 1;
+}
+
+.fa-truck{
+    color: #39b54a;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #39B54A;
+}
 
 .freet{
-    border: 1px solid var(--Gris-claro); 
-    width: 90vw;
-    margin: 4px;
-}
-
-
-footer{
-    background-color: #fff;
-    margin: 4px;
-    font-size: 17px;
+    background-color: white;
+    /* margin: 14px; */
+    font-size: 18px;
     text-align: center;
-} 
-
-
-.description{
-    font-size: 16px;
 }
 
-.Copyright{
+.descrip{
+    font-size: 12px;
+}
+
+.copyright{
     font-size: 12px;
     margin-top: 10px;
     text-align: left;
 }
 
 .fa-credit-card{
-    color: #1259c3;
-    margin-bottom: 3px;
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+}
+
+.fa-credit-card:hover{
+    color: var(--Amarillo);
+    margin-bottom: 1px;
 }
 
 .fa-gift{
-    color: #1259c3;
-    margin-bottom: 4px;
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+}
+
+.fa-gift:hover{
+    color: var(--Amarillo);
+    margin-bottom: 1px;
 }
 
 .fa-user-shield{
-    color: #1259c3;
-    margin-bottom: 4px;
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+}
+
+.fa-user-shield:hover{
+    color: var(--Amarillo);
+    margin-bottom: 1px;
+}
+
+.login{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.login{
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-color: #0022AA;
+    text-align: center;
+}
+
+.login input{
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+    border-color: #0022AA;
+    border-radius: 8%;
+}
+
+.boton{
+    padding: 10px 50px;
+    background-color: var(--Amarillo);
+    text-align: center;
+    transition: color 600ms;
+    border: none;
+    width: 50%;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+}
+
+
+@media(min-width: 361px){
+    .descripcion{
+        display: block;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .produc{
+        width: 85%;
+    }
+
+    .search-bar{
+        /* width: 46%; */
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+
+    .lupa{
+        width: 14%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+
+    .form-registro{
+        width: 90%;
+    }
+
+    .formulari{
+        width: 80%;
+    }
+}
+
+
+@media(min-width: 769px){
+    .descripcion{
+        display: block;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .produc{
+        width: 58%;
+    }
+
+    .search-bar{
+        width: 45%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+
+    .lupa{
+        width: 9%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+    .header__buerger--menu{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        /* display: flex; */
+    }
+
+    .form-registro{
+        width: 90%;
+    }
+
+    .formulari{
+        width: 80%;
+    }
+}
+
+@media(min-width: 1180px){
+
+    .produc{
+        width: 20%;
+    }
+
+    .search-bar{
+        width: 60%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+    
+    .lupa{
+        width: 6%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+    
+    .logo{
+        width: 25%;
+        margin: auto;
+    }
+    .header__buerger--menu{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        display: flex;
+    }
+}
+
+    @media(min-width: 1920px){
+    .produc{
+        width: 20%;
+    }
+
+    .search-bar{
+        width: 60%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+
+    .lupa{
+        width: 4%;
+        display: inline-block;
+        margin-right: 1.5%;
+    }
+
+    .logo{
+        width: 25%;
+        margin: auto;
+    }
+    .header__buerger--menu{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        display: flex;
+    }
 }
