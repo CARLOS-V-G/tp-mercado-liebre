@@ -13,24 +13,48 @@
     <header class="home__header">
 
       <!-- Logo -->
+<!--       <nav >
       <div class="home__header--topbar">
-      <img src="/images/logo-mercado-liebre.svg" alt="" class="logo" />
+      <img src="/images/logo-mercado-liebre.svg" alt="" class="logo" /> -->
 
         <!-- Barra de Búsqueda -->
-        <div class="search-bar">
+
+<!--         <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </div>
+ -->
+
+<!--          <div class="search-bar">
           <input id="text" type="text" placeholder="Buscar productos" name="text">
-          <button class="lupa" type="submit">
-            <i class="fas fa-search"></i> <!-- Icono Lupa -->
-          </button>
+          <button class="lupa" type="submit"><i class="fas fa-search"></i></button>  --> <!-- Icono Lupa -->
+ <!--        </form>
         </div>
-
-
+      </nav>
+ -->
         <!-- Compra en Cuota y sin tarjeta de crédito -->
-      <h2 class="home__compra--en">
+
+        <div class="header-top">
+          <a class="logo" href="/"
+              ><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+          /></a>
+          <form class="search" action="/search" method="GET">
+              <input
+                  type="search"
+                  name="busqueda"
+                  placeholder="Buscar productos, marcas y más"
+              />
+              <i class="fas fa-search"></i>
+          </form>
+      </div>
+
+        <p class="home__compra--en">
         <!-- Icon mano --> <i class="fas fa-hand-holding-usd"></i>
         Compra en cuota y sin tarjeta de crédito
-      </h2>
-      </div>
+      </p>
+
 
       <nav class="home-header-buttom-bar"></nav>
 
@@ -42,7 +66,7 @@
       </nav>
       <!-- Oferta, Tienda oficiales, Venda, Ayuda-->
       <nav class="navbar">
-        <ul class="barra-izquierda">
+        <ul class="barra">
           <li><a href="#">Oferta</a></li>
           <li><a href="#">Tienda oficiales</a></li>
           <li><a href="#">Vender</a></li>
@@ -52,7 +76,7 @@
 
       <!-- Registro, Inicio Sección, Mis compras -->
       <nav class="navbar">
-        <ul>
+        <ul class="barra">
           <li><a href="./register">Crea tu cuenta <!-- Icono de registrarse --><i class="far fa-address-card"></i></a></li>
           <li><a href="./login">Ingresar <!-- Icono de login --> <i class="fas fa-sign-in-alt"></i></a></li>
           <li><a href="/">Mis compras <!-- Icono de canasta --> <i class="fas fa-shopping-basket"></i></a></li>
@@ -61,16 +85,18 @@
     </header>
 
 
+    <section class="banner">
+      <img src="/images/img-home-banner.jpg" alt="">
+    </section> 
+    
     <!-- Main -->
     <main class="home--main">
 
        <!-- Banner -->
-      <section class="banner">
-        <img src="/images/img-home-banner.jpg" alt="">
-      </section> 
+
 
       <h2 class="text">Basado en tu ultima visita</h2>
-      <section>
+      <section class="main--section">
         <div class="articulos">
         <article class="produc">
             <img  src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="100%" class="produc__img">
@@ -82,7 +108,6 @@
               </div>
             <h4 class="descripcion">Cafetera Moulinex</h4>
           </div>
-         </div>
         </article>
 
         <article class="produc">
@@ -130,7 +155,7 @@
 
       <!-- Footer -->
     <footer>
-        <section>
+        <section class="Section-footer">
           <div class="freet">
 
             <div>

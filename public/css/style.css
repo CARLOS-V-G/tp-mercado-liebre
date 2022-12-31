@@ -10,8 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    /* padding: 0px; */
 }
 
 body{
@@ -22,46 +23,59 @@ body{
 
 .home__header{
     background-color: var(--Amarillo);
-    padding: 18px;
-    margin: auto;
-    position: relative;
+    padding: 10px;
 }
 
-.logo{
-    width: 31%;
-    padding: 5px;
+header p {
+    text-align: center;
 }
 
-.home__header--topbar{
+.header-top {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.search-bar input{
-    width: 81%;
+.logo {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 59%;
+    margin-right: 3%;
+}
+
+.search input{
+    display: flex;
     background-color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
+}
+
+.fa-search {
+    color: gray;
+    position: relative;
+    right: 21px;
 }
 
 .lupa{
-    width: 17%;
-    background-color: white;
+    /* width: 17%; */
+    background-color: #ffffff00;
     border: none;
     border-radius: 5px;
     padding: 10px;
+    top: 27px;
+    right: 10px;
 }
 
 .home__compra--en{
-    font-size: 400;
+    font-size: 400px;
     text-align: center;
     font-size: 12px;
-    margin: auto;
-    padding: 20px;
+    padding: 19px;
 }
 
 .header__buerger--menu{
@@ -82,14 +96,13 @@ body{
 
 .navbar, ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar, a{
     color: var(--Gris-oscuro);
-    /* display: inline-block; */
-    padding: 5px 0;
+    display: inline-block;
     font-size: 17px;
 }
 
@@ -137,13 +150,14 @@ h3{
 }
 
 .inf--produc{
-    border-top: 1px solid var(--Gris-claro);
-    padding: 15px;
+    display: flex;
+    border-top: 2px solid var(--Gris-claro);
+    padding: 26px;
+    flex-direction: column;
 }
 
  .preciodescuento{
     display: flex;
-    justify-content: flex-start;
 }
 
 .precio{
@@ -155,12 +169,7 @@ h3{
     font-size: 16px;
     color: #39b34a;
     width: auto;
-    padding: 3px;
-}
-
-
-.descripcion:hover{
-    opacity: 1;
+    padding: 0px 0px 0px 14px;
 }
 
 .fa-truck{
@@ -168,20 +177,30 @@ h3{
     font-size: 16px;
     border-radius: 50%;
     padding: 5px;
-    border: 1px solid #39B54A;
+    border: 1px solid #39b54a;
+    position: absolute;
+    right: 20px;
+    bottom: 85px;
 }
 
 .freet{
+    display: flex;
     background-color: white;
-    /* margin: 14px; */
     font-size: 18px;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .descrip{
     font-size: 12px;
 }
-
+.descripcion{
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 9px 0px 0px 0px;
+}
 .copyright{
     font-size: 12px;
     margin-top: 10px;
@@ -192,6 +211,7 @@ h3{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
+    margin: 14px;
 }
 
 .fa-credit-card:hover{
@@ -203,6 +223,7 @@ h3{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
+    margin: 10px;
 }
 
 .fa-gift:hover{
@@ -214,6 +235,7 @@ h3{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
+    margin: 10px;
 }
 
 .fa-user-shield:hover{
@@ -221,182 +243,282 @@ h3{
     margin-bottom: 1px;
 }
 
-.login{
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: auto;
-}
-
-.login{
-    margin-bottom: 10px;
-    padding: 10px 10px;
-    border-color: #0022AA;
-    text-align: center;
-}
-
-.login input{
-    font-style: italic;
-    width: 50%;
-    text-align: center;
-    border-color: #0022AA;
-    border-radius: 8%;
-}
-
-.boton{
-    padding: 10px 50px;
-    background-color: var(--Amarillo);
-    text-align: center;
-    transition: color 600ms;
-    border: none;
-    width: 50%;
-}
-
-.boton:hover{
-    background-color: #0022AA;
+footer{
+    padding: 20px 0px 0px 0px;
 }
 
 
 @media(min-width: 361px){
-    .descripcion{
+    .header-top {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+    display: flex;
+    }
+    
+    .search {
+        display: flex;
+        width: 52%;
+        justify-content: space-between;
+    }
+    
+    .search input{
         display: block;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .fa-search {
+        display: flex;
+        color: gray;
+        position: relative;
+        right: 20px;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
-    .produc{
-        width: 85%;
-    }
-
-    .search-bar{
-        /* width: 46%; */
-        display: inline-block;
-        margin-right: 1.5%;
-    }
-
-    .lupa{
-        width: 14%;
-        display: inline-block;
-        margin-right: 1.5%;
-    }
-
-    .form-registro{
-        width: 90%;
-    }
-
-    .formulari{
-        width: 80%;
-    }
 }
 
-
 @media(min-width: 769px){
-    .descripcion{
-        display: block;
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .home__header{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .produc{
-        width: 58%;
-    }
-
-    .search-bar{
-        width: 45%;
-        display: inline-block;
-        margin-right: 1.5%;
-    }
-
-    .lupa{
-        width: 9%;
-        display: inline-block;
-        margin-right: 1.5%;
-    }
     .header__buerger--menu{
         display: none;
     }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra{
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
     .navbar{
         display: flex;
+    }
+    .search{
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top{
+        width: 65%;
         justify-content: space-between;
     }
-    .navbar ul {
-        /* display: flex; */
+
+    .logo{
+        padding: 0px 0px 0px 10px;
     }
 
-    .form-registro{
-        width: 90%;
+    .logo img{
+    display: flex;
+    position: relative;
     }
 
-    .formulari{
-        width: 80%;
+    .main--section{
+        display: flex;
     }
+
+
+    .articulos{
+        display: flex;
+    }
+    
+    .produc{
+        width: 45%;
+    }
+
+
 }
+
+@media(min-width: 768px){
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home__header{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu{
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra{
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .navbar{
+        display: flex;
+    }
+    .search{
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top{
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img{
+    display: flex;
+    position: relative;
+    }
+
+    .main--section{
+        display: flex;
+    }
+
+
+    .articulos{
+        display: flex;
+    }
+    
+    .produc{
+        width: 45%;
+    }
+
+
+}
+
 
 @media(min-width: 1180px){
 
-    .produc{
-        width: 20%;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    .search-bar{
-        width: 60%;
-        display: inline-block;
-        margin-right: 1.5%;
+    .home__header{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
     }
-    
-    .lupa{
-        width: 6%;
-        display: inline-block;
-        margin-right: 1.5%;
-    }
-    
-    .logo{
-        width: 25%;
-        margin: auto;
-    }
+
     .header__buerger--menu{
         display: none;
     }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra{
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .search input{
+        /* display: flex; */
+        /* background-color: white; */
+        /* border: none; */
+        /* border-radius: 5px; */
+        /* padding: 10px; */
+        width: 100%;
+    }
+    
     .navbar{
         display: flex;
-        justify-content: space-between;
     }
-    .navbar ul {
+    .search{
         display: flex;
-    }
-}
-
-    @media(min-width: 1920px){
-    .produc{
-        width: 20%;
-    }
-
-    .search-bar{
+        position: relative;
+        justify-content: center;
         width: 60%;
-        display: inline-block;
-        margin-right: 1.5%;
     }
 
-    .lupa{
-        width: 4%;
-        display: inline-block;
-        margin-right: 1.5%;
+    .header-top{
+        width: 77%;
+        justify-content: space-between;
     }
 
     .logo{
-        width: 25%;
-        margin: auto;
+        padding: 0px 0px 0px 10px;
     }
-    .header__buerger--menu{
-        display: none;
+
+    .logo img{
+    display: flex;
+    position: relative;
+    width: 81%;
     }
-    .navbar{
+
+    .main--section{
         display: flex;
-        justify-content: space-between;
     }
-    .navbar ul {
+
+
+    .articulos{
         display: flex;
+    }
+    
+    .produc{
+        width: 24%;
     }
 }
