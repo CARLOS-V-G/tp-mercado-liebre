@@ -12,25 +12,25 @@
     <!-- Header -->
     <header class="home__header">
 
-      <!-- Logo -->
-      <div class="home__header--topbar">
-      <img src="/images/logo-mercado-liebre.svg" alt="" class="logo" />
+        <div class="header-top">
+          <a class="logo" href="/"
+              ><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+          /></a>
+          <form class="search" action="/search" method="GET">
+              <input
+                  type="search"
+                  name="busqueda"
+                  placeholder="Buscar productos, marcas y más"
+              />
+              <i class="fas fa-search"></i>
+          </form>
+      </div>
 
-        <!-- Barra de Búsqueda -->
-        <div class="search-bar">
-          <input id="text" type="text" placeholder="Buscar productos" name="text">
-          <button class="lupa" type="submit">
-            <i class="fas fa-search"></i> <!-- Icono Lupa -->
-          </button>
-        </div>
-
-
-        <!-- Compra en Cuota y sin tarjeta de crédito -->
-      <h2 class="home__compra--en">
+        <p class="home__compra--en">
         <!-- Icon mano --> <i class="fas fa-hand-holding-usd"></i>
         Compra en cuota y sin tarjeta de crédito
-      </h2>
-      </div>
+      </p>
+
 
       <nav class="home-header-buttom-bar"></nav>
 
@@ -42,7 +42,7 @@
       </nav>
       <!-- Oferta, Tienda oficiales, Venda, Ayuda-->
       <nav class="navbar">
-        <ul class="barra-izquierda">
+        <ul class="barra">
           <li><a href="#">Oferta</a></li>
           <li><a href="#">Tienda oficiales</a></li>
           <li><a href="#">Vender</a></li>
@@ -52,43 +52,44 @@
 
       <!-- Registro, Inicio Sección, Mis compras -->
       <nav class="navbar">
-        <ul>
+        <ul class="barra">
           <li><a href="./register">Crea tu cuenta <!-- Icono de registrarse --><i class="far fa-address-card"></i></a></li>
           <li><a href="./login">Ingresar <!-- Icono de login --> <i class="fas fa-sign-in-alt"></i></a></li>
-          <li><a href="/">Mis compras <!-- Icono de canasta --> <i class="fas fa-shopping-basket"></i></a></li>
+          <li><a href="">Mis compras <!-- Icono de canasta --> <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
       </nav>
     </header>
 
 
+    <section class="banner">
+      <img src="/images/img-home-banner.jpg" alt="">
+    </section> 
+    
     <!-- Main -->
     <main class="home--main">
 
-       <!-- Banner -->
-      <section class="banner">
-        <img src="/images/img-home-banner.jpg" alt="">
-      </section> 
+       
+
 
       <h2 class="text">Basado en tu ultima visita</h2>
-      <section>
+      <section class="main--section">
         <div class="articulos">
         <article class="produc">
             <img  src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="100%" class="produc__img">
             <div class="inf--produc">
-              <div><i class="fas fa-truck"></i></div> <!-- Icono de camión -->
+              <div><i class="fas fa-truck"></i></div> 
               <div class="preciodescuento">
             <h3 class="precio">$6.770</h3>
             <p class="descuento">40% OFF</p>
               </div>
             <h4 class="descripcion">Cafetera Moulinex</h4>
           </div>
-         </div>
         </article>
 
         <article class="produc">
             <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="100%" class="produc__img">
             <div class="inf--produc">
-              <div><i class="fas fa-truck"></i></div> <!-- Icono de camión -->
+              <div><i class="fas fa-truck"></i></div> 
               <div class="preciodescuento">
             <h3 class="precio">$230.000</h3>
             <p class="descuento">20% OFF</p>
@@ -100,7 +101,7 @@
         <article class="produc">
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung" width="100%" class="produc__img">
             <div class="inf--produc">
-              <div><i class="fas fa-truck"></i></div> <!-- Icono de camión -->
+              <div><i class="fas fa-truck"></i></div> 
               <div class="preciodescuento">
             <h3 class="precio">$70.500</h3>
             <p class="descuento">10% OFF</p>
@@ -112,7 +113,7 @@
         <article class="produc">
             <img src="/images/img-tv-samsung-smart.jpg" alt="Samsung smartTv" width="100%" class="produc__img">
             <div class="inf--produc">
-              <div><i class="fas fa-truck"></i></div> <!-- Icono de camión -->
+              <div><i class="fas fa-truck"></i></div> 
               <div class="preciodescuento">
             <h3 class="precio">$23.200</h3>
             <p class="descuento">5% OFF</p>
@@ -123,14 +124,13 @@
         </article>
       </section>
 
-      <!-- Sección de Oferta -->
+      
       <section>
       </section>
     </main>
-
-      <!-- Footer -->
+      
     <footer>
-        <section>
+        <section class="Section-footer">
           <div class="freet">
 
             <div>
