@@ -119,6 +119,7 @@ header p {
     color: var(--Gris-oscuro);
     text-align: center;
     font-size: 28px;
+    padding-top: 13px;
 }
 
 main{
@@ -147,23 +148,43 @@ h3{
 
 .produc img{
     width: 100%;
-    padding-bottom: 9px;
 }
 
 .inf--produc{
     display: flex;
     border-top: 2px solid var(--Gris-claro);
-    padding: 26px;
+    padding: 20px;
     flex-direction: column;
+}
+
+.inf--produc h4{
+    color: var(--Gris-oscuro);
+    font-weight: 600;
+    margin: 0px;
+    height: 0px;
+    width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.inf--produc:hover h4{
+    height: 50px;
+    margin-top: 25px;
+
 }
 
  .preciodescuento{
     display: flex;
+    align-items: center;
 }
 
 .precio{
     font-size: 18px;
     /* width: 30%; */
+}
+
+.descuento .precio{
+    display: flex;
 }
 
 .descuento{
@@ -173,16 +194,21 @@ h3{
     padding: 0px 0px 0px 14px;
 }
 
+.truck{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
 .fa-truck{
     color: #39b54a;
     font-size: 16px;
     border-radius: 50%;
     padding: 5px;
     border: 1px solid #39b54a;
-    position: absolute;
-    right: 20px;
-    bottom: 60px;
-    transition: rotate 350ms;
+    position: relative;
+    top: 15px;
+    transition: rotate 1s;
 }
 
 .fa-truck:hover{
@@ -203,26 +229,8 @@ h3{
     font-size: 12px;
 }
 
-.descripcion{
-    font-size: 16px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    margin: 0;
-    padding: 0px;
-    position: absolute;
-    top: 0px;
-    bottom: 91px;
-    left: 0px;
-    width: 100%;
-    display: flex;
-    opacity: 0;
-    align-items: center;
-    transition: opacity 350ms;
-    justify-content: center;
-}
-
-.descripcion:hover{
-    opacity: 1;
+.produc:hover{
+    box-shadow: 0pc 0px 10px rgb(100, 100, 100);
 }
 
 
@@ -664,11 +672,6 @@ footer{
     }
 
     .search input{
-        /* display: flex; */
-        /* background-color: white; */
-        /* border: none; */
-        /* border-radius: 5px; */
-        /* padding: 10px; */
         width: 100%;
     }
     
